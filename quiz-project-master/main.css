@@ -1,0 +1,114 @@
+/* Global Styles */
+body {
+  background-color: #f9f9f9; /* Light background for better contrast */
+  color: #333333;
+  font-family: 'Chakra Petch', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Ensures stacking vertically */
+  margin: 0;
+  padding: 20px;
+  height: 100vh; /* Make the body take full height to center content */
+  box-sizing: border-box;
+}
+
+/* Container */
+.container {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 800px;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 20px;
+}
+
+/* Header */
+h1 {
+  color: #1e3869;
+  text-shadow: 2px 2px #cccccc;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+/* Link Styles */
+a {
+  text-decoration: none;
+  color: #1e3869;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+a:visited, a:active {
+  color: #1e3869;
+}
+a:hover {
+  color: #555555;
+}
+
+/* Button Styles */
+button {
+  background-color: #1e3869;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  margin: 10px;
+  cursor: pointer;
+  display: inline-block;
+}
+button:hover {
+  background-color: #38380c;
+  color: #f9f9f9;
+}
+button:focus {
+  outline: none;
+}
+
+/* List Styles */
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+  margin: 5px 0;
+  padding: 10px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* Multiple Choice Sections */
+.multipleChoiceQuestion, .multipleChoiceAnswerOne, .multipleChoiceAnswerTwo, .multipleChoiceAnswerFour {
+  margin-bottom: 10px;
+  padding: 8px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    padding: 30px;
+  }
+  h1 {
+    font-size: 1.8em;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 1.6em;
+  }
+  button {
+    font-size: 16px;
+    padding: 10px 18px;
+  }
+}
